@@ -81,4 +81,8 @@ Open a new terminal window and start the client application.
 
 ## License
 
-This software is shared property of the people.
+This software is shared property of the people, licensed under the **GNU Affero General Public License v3 (AGPLv3)**. 
+
+In the spirit of collective ownership and transparency, the AGPLv3 ensures that all who interact with the People's Payment Platform—even over a network—have the right to access, study, and improve its source code. Any redistributions or modifications must also be shared under the same revolutionary terms.
+
+See the [LICENSE](LICENSE) file for the full text of the agreement.
