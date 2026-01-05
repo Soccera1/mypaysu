@@ -92,7 +92,7 @@ void init_x() {
     win = XCreateSimpleWindow(dpy, RootWindow(dpy, screen), 10, 10, win_width, win_height, 1,
                               BlackPixel(dpy, screen), WhitePixel(dpy, screen));
     XSelectInput(dpy, win, ExposureMask | KeyPressMask | ButtonPressMask | StructureNotifyMask);
-    XStoreName(dpy, win, "MyPaySU - The People's Wallet");
+    XStoreName(dpy, win, "MyPaySU - The Lenin Tribute Wallet");
     XMapWindow(dpy, win);
 
     // Initialize Xft
@@ -197,6 +197,11 @@ void render() {
 
     // Status Message
     draw_text(10, win_height - 30, status_message, font_small, color_fg);
+
+    // Lenin Tribute
+    const char *tribute = "In Honor of Vladimir Ilyich Lenin (1870-1924)";
+    XftTextExtentsUtf8(dpy, font_small, (FcChar8 *)tribute, strlen(tribute), &extents);
+    draw_text(win_width - extents.width - 10, win_height - 30, tribute, font_small, color_fg);
 
     if (current_state == STATE_LOGIN) {
         draw_text(input_user.x, input_user.y - 20, "Username:", font_small, color_fg);
