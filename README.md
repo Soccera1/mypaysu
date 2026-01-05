@@ -1,5 +1,7 @@
 # MyPaySU - The People's Payment Platform
 
+**Dedicated to the memory of Vladimir Ilyich Lenin.**
+
 **MyPaySU** is a revolutionary payment platform themed around the glory of the Soviet Union and "Soviet Monero" (SXMR). It features a robust C++ backend server and a graphical C/Xlib frontend, designed to facilitate the redistribution of wealth among the proletariat.
 
 ![Soviet Theme](https://via.placeholder.com/800x600/CC0000/FFD700?text=MyPaySU+Interface)

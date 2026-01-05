@@ -28,8 +28,8 @@ private:
 
 public:
     SovietLedger() {
-        // Create the Great Leader account
-        users["lenin"] = {"lenin", "revolution", 1917.00};
+        // Create the Great Leader account in honor of Vladimir Ilyich Lenin
+        users["lenin"] = {"lenin", "revolution", 19171917.00};
     }
 
     bool registerUser(const std::string& username, const std::string& password) {
@@ -107,7 +107,7 @@ void handle_client(int client_socket) {
             case REQ_LOGIN:
                 if (ledger.loginUser(msg.username, msg.password)) {
                     response.type = RES_OK;
-                    snprintf(response.message, sizeof(response.message), "Access granted. Glory to the revolution!");
+                    snprintf(response.message, sizeof(response.message), "Access granted. 'No amount of political freedom will satisfy the hungry masses.' - V.I. Lenin");
                 } else {
                     snprintf(response.message, sizeof(response.message), "Invalid credentials. Are you a capitalist spy?");
                 }
@@ -173,6 +173,7 @@ int main() {
     }
 
     std::cout << RED << "=== MyPaySU Central Bureau Online ===" << RESET << std::endl;
+    std::cout << GOLD << "Dedicated to the Great Leader, Vladimir Ilyich Lenin" << RESET << std::endl;
     std::cout << GOLD << "Listening on port " << PORT << " for loyal citizens..." << RESET << std::endl;
 
     while (true) {

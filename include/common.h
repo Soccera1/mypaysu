@@ -3,7 +3,7 @@
 
 #include <stdint.h>
 
-#define PORT 1917
+#define PORT 1917 // Honoring the year of the Great October Socialist Revolution led by Lenin
 #define BUFFER_SIZE 1024
 
 // Request Types
