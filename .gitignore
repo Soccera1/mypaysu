@@ -1,6 +1,7 @@
 # Binaries
 mypaysu-server
 mypaysu-client
+mypaysu-web
 
 # Objects and Libraries
 *.o
