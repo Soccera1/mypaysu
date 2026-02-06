@@ -13,9 +13,18 @@
 *   **Modern Web Technology:** Responsive HTML/CSS/JavaScript frontend with C++ HTTP backend.
 *   **Cross-Platform:** Works on any device with a web browser!
 
+## Two Frontend Options
+
+MyPaySU provides two alternative frontends to suit your preferences:
+
+1. **Web Application** - Browser-based interface (default build)
+2. **Native Desktop Application** - X11/Xlib GUI for Linux
+
+---
+
 ## Web Application
 
-The default build target is now the web application, which provides a modern browser-based interface.
+The web application provides a browser-based interface that works on any platform.
 
 ### Prerequisites
 
@@ -65,36 +74,38 @@ Navigate to: **http://localhost:1917**
     *   Click "REFRESH" to update your balance.
     *   Click "LOGOUT" to return to the login screen.
 
-## Legacy Desktop Application
+---
 
-The original X11-based desktop client and server are still available for those who prefer the traditional experience.
+## Native Desktop Application
 
-### Build Legacy Applications
+The native X11-based desktop client provides a traditional GUI experience for Linux users.
+
+### Build Native Applications
 
 ```bash
-make legacy
+make native
 ```
 
 This builds both:
 - `mypaysu-server` - TCP server (port 1917)
 - `mypaysu-client` - X11/Xlib GUI client
 
-### Legacy Prerequisites
+### Native Prerequisites
 
 ```bash
 sudo apt-get install build-essential libx11-dev libxft-dev libfontconfig1-dev
 ```
 
-### Legacy Usage
+### Native Usage
 
 1. Start the server: `./mypaysu-server`
 2. In another terminal, start the client: `./mypaysu-client`
 
 ## Project Structure
 
-*   `src/backend/webserver.cpp` - Modern HTTP web server with REST API
-*   `src/backend/server.cpp` - Legacy TCP server
-*   `src/frontend/main.c` - Legacy X11/Xlib GUI client
+*   `src/backend/webserver.cpp` - HTTP web server with REST API
+*   `src/backend/server.cpp` - TCP server for native client
+*   `src/frontend/main.c` - Native X11/Xlib GUI client
 *   `public/` - Web frontend files:
     *   `index.html` - Main HTML page
     *   `style.css` - Stylesheet (Soviet themed!)

@@ -130,16 +130,20 @@ Then rebuild with `make clean && make`.
 - Check the browser console for JavaScript errors
 - Verify the server is still running
 
-## Legacy vs Web Application
+## Native Desktop vs Web Application
 
-| Feature | Legacy (X11) | Web Application |
-|---------|-------------|-----------------|
-| Platform | Linux only | Any OS with browser |
+MyPaySU offers two frontend alternatives:
+
+| Feature | Native Desktop (X11) | Web Application |
+|---------|---------------------|-----------------|
+| Platform | Linux | Any OS with browser |
 | Interface | X11/Xlib GUI | HTML/CSS/JS |
 | Protocol | Binary TCP | HTTP REST API |
 | Portability | Desktop only | Desktop + Mobile |
 | Dependencies | X11, Xft, Fontconfig | None (browser-based) |
-| Build Target | `make legacy` | `make` |
+| Build Target | `make native` | `make` |
+
+Both frontends provide the same core functionality - choose the one that best fits your needs!
 
 ---
 
