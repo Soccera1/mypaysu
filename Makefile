@@ -9,7 +9,7 @@ all: webapp
 webapp: src/backend/webserver.cpp
 	$(CXX) $(CXXFLAGS) -o mypaysu-web src/backend/webserver.cpp
 
-legacy: backend frontend
+native: backend frontend
 
 backend: src/backend/server.cpp
 	$(CXX) $(CXXFLAGS) -o mypaysu-server src/backend/server.cpp
