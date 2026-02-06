@@ -149,6 +149,10 @@ In the spirit of collective ownership and transparency, the AGPLv3 ensures that 
 
 See the [LICENSE](LICENSE) file for the full text of the agreement.
 
+## Code of Conduct
+
+Participation in this project is governed by our [Code of Conduct](CODE_OF_CONDUCT.md).
+
 ---
 
 *"The goal of socialism is communism." - V.I. Lenin*
