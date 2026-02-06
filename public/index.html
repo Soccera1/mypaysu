@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyPaySU - The People's Payment Platform</title>
+    <link rel="stylesheet" href="/public/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>MyPaySU</h1>
+            <p class="subtitle">The Official Payment System of the Proletariat</p>
+        </header>
+
+        <div id="login-screen" class="screen active">
+            <div class="card">
+                <h2>Citizen Authentication</h2>
+                <div class="form-group">
+                    <label for="login-username">Username:</label>
+                    <input type="text" id="login-username" placeholder="Enter your name, comrade">
+                </div>
+                <div class="form-group">
+                    <label for="login-password">Password:</label>
+                    <input type="password" id="login-password" placeholder="State secret">
+                </div>
+                <div class="button-group">
+                    <button id="btn-login" class="btn btn-primary">LOGIN</button>
+                    <button id="btn-register" class="btn btn-secondary">REGISTER</button>
+                </div>
+                <div id="login-status" class="status-message"></div>
+            </div>
+        </div>
+
+        <div id="dashboard-screen" class="screen">
+            <div class="card">
+                <div class="dashboard-header">
+                    <div>
+                        <h2>Comrade <span id="current-user-display"></span></h2>
+                        <p class="balance-label">Your State Contribution:</p>
+                        <p class="balance-amount" id="balance-display">0.00 SXMR</p>
+                    </div>
+                    <div class="header-actions">
+                        <button id="btn-refresh" class="btn btn-small">⟳ REFRESH</button>
+                        <button id="btn-logout" class="btn btn-small">LOGOUT</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Redistribute Wealth</h3>
+                <div class="form-group">
+                    <label for="transfer-recipient">Recipient Comrade:</label>
+                    <input type="text" id="transfer-recipient" placeholder="Username of recipient">
+                </div>
+                <div class="form-group">
+                    <label for="transfer-amount">Amount (SXMR):</label>
+                    <input type="number" id="transfer-amount" step="0.01" min="0.01" placeholder="0.00">
+                </div>
+                <button id="btn-transfer" class="btn btn-primary">REDISTRIBUTE WEALTH</button>
+                <div id="transfer-status" class="status-message"></div>
+            </div>
+        </div>
+
+        <footer>
+            <p>In Honor of Vladimir Ilyich Lenin (1870-1924)</p>
+            <p class="quote">"The goal of socialism is communism." - V.I. Lenin</p>
+        </footer>
+    </div>
+
+    <script src="/public/app.js"></script>
+</body>
+</html>
