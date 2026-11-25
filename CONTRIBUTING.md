@@ -1,6 +1,6 @@
 # Contributing to the Revolution
 
-We welcome all comrades who wish to improve the MyPaySU platform. By contributing, you agree to help build a better financial future for the people.
+We welcome all comrades who wish to improve the MyPaySU platform. By contributing, you agree to help build a better financial future for the people. All contributors are expected to adhere to our [Code of Conduct](CODE_OF_CONDUCT.md).
 
 ## Coding Standards
 
